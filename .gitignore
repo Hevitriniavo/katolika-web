@@ -1,0 +1,26 @@
+# IDE directories
+.idea/
+.code/
+
+# Composer dependencies
+vendor/
+
+# Node modules (if using Node.js for front-end)
+node_modules/
+
+# Logs
+*.log
+
+# Composer lock file
+composer.lock
+
+# Operating system files
+.DS_Store
+Thumbs.db
+.env
+
+# Environment variables
+.env
+
+# Cache
+cache/
