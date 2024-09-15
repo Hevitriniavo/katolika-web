@@ -9,37 +9,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/responsibilities") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/responsibilities") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i
                                     class="fas fa-sun"></i>Responsibility</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/regions") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/regions") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Region</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/holies") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/holies") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Holy</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/committees") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/committees") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Committee</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/sacraments") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/sacraments") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Sacrament</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/activities") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/activities") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Activity</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= path("/users") ?>"
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>User</a>
                     </li>
                 </ul>
