@@ -46,7 +46,9 @@
                                 <a href="<?= path("/users/update?id=" . $user['id']) ?>" class="btn btn-warning">Edit</a>
                                 <form action="<?= path("/users/delete") ?>" method="POST" style="display:inline;">
                                     <input type="hidden" name="id" value="<?= htmlspecialchars($user['id']); ?>">
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-danger">
+                                    <i class="fas fa-trash" style="font-size: 1rem;"></i>
+                                    </button>
                                 </form>
                             </td>
                         </tr>

@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 <div class="container-fluid mt-5" style="background-color: #f0f4f8; padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font-family: 'Open Sans', sans-serif;">
     <h2 style="color: #007bff; font-weight: 600; font-family: 'Montserrat', sans-serif;"><?= $title ?></h2>
     <a href="#" id="openAddModal" class="btn btn-primary mb-3" style="background-color: #28a745; border-color: #28a745; font-weight: 500; padding: 10px 20px;">Add</a>
@@ -20,15 +22,18 @@
                     <td style="padding: 12px;"><?= htmlspecialchars($item['name']); ?></td>
                     <td style="padding: 12px;"><?= htmlspecialchars($item['code']); ?></td>
                     <td style="padding: 12px;">
+                        
                         <button class="edit-btn btn btn-warning"
                                 data-committee-id="<?= htmlspecialchars($item['id']); ?>"
                                 data-committee-name="<?= htmlspecialchars($item['name']); ?>"
                                 data-committee-code="<?= htmlspecialchars($item['code']); ?>"
-                                style="font-weight: 500; padding: 8px 16px;">Edit
+                                style="font-weight: 500; padding: 6px 10px;">
+                                <i class="fas fa-edit" style="font-size: 1rem; color: green"></i>
                         </button>
                         <button class="delete-btn btn btn-danger"
                                 data-committee-id="<?= htmlspecialchars($item['id']); ?>"
-                                style="font-weight: 500; padding: 8px 16px;">Delete
+                                style="font-weight: 500; padding: 6px 10px;">
+                                <i class="fas fa-trash" style="font-size: 1rem;"></i>
                         </button>
                     </td>
                 </tr>

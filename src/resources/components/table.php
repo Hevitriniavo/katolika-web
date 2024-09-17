@@ -22,12 +22,14 @@
                         <button class="edit-btn btn btn-warning"
                                 data-id="<?= htmlspecialchars($item['id']); ?>"
                                 data-name="<?= htmlspecialchars($item['name']); ?>"
-                                style="font-weight: 500; padding: 8px 16px;">Edit
+                                style="font-weight: 500; padding: 6px 10px;;">
+                                <i class="fas fa-edit" style="font-size: 1rem; color: green"></i>
                         </button>
                         <button class="delete-btn btn btn-danger"
                                 data-id="<?= htmlspecialchars($item['id']); ?>"
                                 data-name="<?= htmlspecialchars($item['name']); ?>"
-                                style="font-weight: 500; padding: 8px 16px;">Delete
+                                style="font-weight: 500; padding: 6px 10px;">
+                                <i class="fas fa-trash" style="font-size: 1rem;"></i>
                         </button>
                     </td>
                 </tr>
