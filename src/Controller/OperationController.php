@@ -19,6 +19,8 @@ class OperationController
         $stmt = $this->pdo->prepare("SELECT * FROM operation");
         $stmt->execute();
         $operations = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return views("operation.view");
+        return views("operation.view", [
+            "operations" => $operations
+        ]);
     }
 }
