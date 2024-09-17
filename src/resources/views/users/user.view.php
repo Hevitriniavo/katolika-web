@@ -43,11 +43,17 @@
                             <td><?= htmlspecialchars($user['birth_date']); ?></td>
                             <td><?= htmlspecialchars($user['gender']); ?></td>
                             <td>
-                                <a href="<?= path("/users/update?id=" . $user['id']) ?>" class="btn btn-warning">Edit</a>
+                                <a href="<?= path("/users/update?id=" . $user['id']) ?>" class="btn btn-warning" 
+                                style="font-weight: 500; padding: 6px 10px;">
+                                <i class="fas fa-edit" style="font-size: 1rem; color: green"></i>
+                                </a>
                                 <form action="<?= path("/users/delete") ?>" method="POST" style="display:inline;">
                                     <input type="hidden" name="id" value="<?= htmlspecialchars($user['id']); ?>">
-                                    <button type="submit" class="btn btn-danger">
-                                    <i class="fas fa-trash" style="font-size: 1rem;"></i>
+                                    <button type="submit" class="btn btn-danger" 
+                                    style="font-weight: 500; padding: 6px 10px;">
+                                    <i class="fas fa-trash" style="font-size: 1rem;">
+
+                                    </i>
                                     </button>
                                 </form>
                             </td>
