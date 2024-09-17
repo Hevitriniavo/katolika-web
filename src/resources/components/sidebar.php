@@ -69,14 +69,20 @@
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
                            data-target="#submenu-3" aria-controls="submenu-3">
-                            <i class="fas fa-user"></i> User
+                            <i class="fas fa-user"></i> Herivelona
                         </a>
                     </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
+                                      data-target="#submenu-3" aria-controls="submenu-3">
+                                      <i class="fas fa-search"></i> Recherche
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                  <a class="nav-link dropdown-toggle" style="font-family: 'Roboto', sans-serif;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-running"></i> finding money
                                  </a>
-                                    <div style="background-coulour: #d3d3d3;" class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="<?= path("/operations") ?>">Operations</a>
                                         <a class="dropdown-item" href="<?= path("/add-operation") ?>">Billet</a>
                                         <a class="dropdown-item" href="<?= path("/add-operation") ?>">Marquage</a>
@@ -84,7 +90,25 @@
                                         <a class="dropdown-item" href="<?= path("/add-operation") ?>">Distrubution</a>
                                         <a class="dropdown-item" href="<?= path("/add-operation") ?>">Résultat</a>
                                     </div>
-                                    </li>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
+                                      data-target="#submenu-3" aria-controls="submenu-3">
+                                      <i class="fas fa-chart-bar"></i>Statisique
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
+                                      data-target="#submenu-3" aria-controls="submenu-3">
+                                      <i class="fas fa-calendar-alt"></i> Calendrier
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
+                                      data-target="#submenu-3" aria-controls="submenu-3">
+                                      <i class="fas fa-user-check"></i> Présence
+                                </a>
+                            </li>
                 </ul>
             </div>
         </nav>
