@@ -4,6 +4,7 @@ use App\Controller\ActivityController;
 use App\Controller\CommitteeController;
 use App\Controller\HolyController;
 use App\Controller\HomeController;
+use App\Controller\OperationController;
 use App\Controller\RegionController;
 use App\Controller\ResponsibilityController;
 use App\Controller\SacramentController;
@@ -33,7 +34,6 @@ return [
     ['path' => "/committees/update", "method" => "POST", "controller" => [CommitteeController::class, "update"]],
     ['path' => "/committees/delete", "method" => "POST", "controller" => [CommitteeController::class, "delete"]],
 
-
     ['path' => "/sacraments", "method" => "GET", "controller" => [SacramentController::class, "index"]],
     ['path' => "/sacraments/create", "method" => "POST", "controller" => [SacramentController::class, "create"]],
     ['path' => "/sacraments/update", "method" => "POST", "controller" => [SacramentController::class, "update"]],
@@ -50,5 +50,7 @@ return [
     ['path' => "/users/update", "method" => "POST", "controller" => [UserController::class, "update"]],
     ['path' => "/users/update", "method" => "GET", "controller" => [UserController::class, "showEditForm"]],
     ['path' => "/users/delete", "method" => "POST", "controller" => [UserController::class, "delete"]],
+
+    ['path' => "/operations", "method" => "GET", "controller" => [OperationController::class, "index"]],
 
 ];

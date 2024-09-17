@@ -57,6 +57,13 @@
                             <i class="fas fa-user"></i> User
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/operations") ?>"
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-running"></i> finding money
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
