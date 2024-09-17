@@ -12,9 +12,10 @@
                     <th style="padding: 12px; font-family: 'Roboto', sans-serif;">Actions</th>
                 </tr>
             </thead>
+          
             <tbody id="responsibilityCommitteeTable">
             <?php foreach ($items as $item): ?>
-                <tr style="background-color: #eef7ee; transition: background-color 0.3s;">
+                <tr style="background-color: #eef7ee; transition: background-color 0.3s;" >
                     <td style="padding: 12px;"><?= htmlspecialchars($item['id']); ?></td>
                     <td style="padding: 12px;"><?= htmlspecialchars($item['name']); ?></td>
                     <td style="padding: 12px;"><?= htmlspecialchars($item['code']); ?></td>
@@ -32,9 +33,11 @@
                     </td>
                 </tr>
             <?php endforeach; ?>
+            </div>
             </tbody>
+          
         </table>
-        </div>
+        
     <?php else: ?>
         <div class="alert alert-info" role="alert" style="background-color: #d1ecf1; border-color: #bee5eb; color: #0c5460; padding: 15px; font-size: 1.1rem; font-family: 'Open Sans', sans-serif;">
             <?= $alert ?>

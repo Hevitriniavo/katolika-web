@@ -1,4 +1,5 @@
 .scroll{
     height: 400px;
     overflow-y: scroll;
+   /* min-width: 200px; */
 }

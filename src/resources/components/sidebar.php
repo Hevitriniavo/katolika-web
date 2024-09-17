@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <div class="nav-left-sidebar sidebar-dark">
     <div class="menu-list">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -10,37 +11,51 @@
                 <ul class="navbar-nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/responsibilities") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i
-                                    class="fas fa-sun"></i>Responsibility</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-tasks"></i> Responsibility
+                        </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/regions") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Region</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-map-marker-alt"></i> Region
+                        </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/holies") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Holy</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-church"></i> Holy
+                        </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/committees") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Committee</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-users"></i> Committee
+                        </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/sacraments") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Sacrament</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-cross"></i> Sacrament
+                        </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/activities") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>Activity</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-running"></i> Activity
+                        </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
-                           data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-sun"></i>User</a>
+                           data-target="#submenu-3" aria-controls="submenu-3">
+                            <i class="fas fa-user"></i> User
+                        </a>
                     </li>
                 </ul>
             </div>

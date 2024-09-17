@@ -24,7 +24,7 @@
                         <th>Actions</th>
                     </tr>
                     </thead>
-                    <tbody id="responsibilityTable">
+                    <tbody id="responsibilityTable" >
                     <?php foreach ($users as $user): ?>
                         <tr>
                             <td><?= htmlspecialchars($user['id']); ?></td>
