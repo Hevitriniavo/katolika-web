@@ -1,4 +1,4 @@
-<div class="dashboard-main-wrapper">
+<div>
     <?= include_component("navbar") ?>
     <?= include_component("sidebar") ?>
     <div class="dashboard-wrapper">

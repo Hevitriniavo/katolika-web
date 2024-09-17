@@ -8,6 +8,7 @@
             <a href="<?= path("/users/create") ?>" id="openAddModal" class="btn btn-primary mb-3">Add</a>
 
             <?php if (count($users) > 0): ?>
+                <div class="scroll">
                 <table class="table table-bordered">
                     <thead>
                     <tr>
@@ -15,8 +16,8 @@
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
-                        <th>Code</th>
-                        <th>Photo</th>
+                        <th>region</th>
+                
                         <th>Address</th>
                         <th>Birth Date</th>
                         <th>Gender</th>
@@ -30,7 +31,7 @@
                             <td><?= htmlspecialchars($user['first_name']); ?></td>
                             <td><?= htmlspecialchars($user['last_name']); ?></td>
                             <td><?= htmlspecialchars($user['username']); ?></td>
-                            <td><?= htmlspecialchars($user['code']); ?></td>
+                           
                             <td>
                                 <?php if (!empty($user['photo'])): ?>
                                     <img src="<?= htmlspecialchars($user['photo']); ?>" alt="User Photo" style="width: 50px; height: auto;">
@@ -52,6 +53,7 @@
                     <?php endforeach; ?>
                     </tbody>
                 </table>
+                </div>
             <?php else: ?>
                 <div class="alert alert-info" role="alert">
                     No users found. Please add some users.
