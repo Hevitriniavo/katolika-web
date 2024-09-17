@@ -57,6 +57,17 @@
                             <i class="fas fa-user"></i> User
                         </a>
                     </li>
+                    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-user"></i> vola
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="<?= path("/users") ?>">Users</a>
+        <a class="dropdown-item" href="<?= path("/settings") ?>">Settings</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="<?= path("/logout") ?>">Logout</a>
+    </div>
+</li>
                 </ul>
             </div>
         </nav>
