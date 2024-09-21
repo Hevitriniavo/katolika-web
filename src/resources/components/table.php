@@ -8,7 +8,7 @@
         <table class="table table-bordered" style="background-color: white; border: 1px solid #007bff; border-radius: 8px; overflow: hidden;">
             <thead style="background-color: #28a745; color: white; font-weight: 600; font-family: 'Montserrat', sans-serif;">
                 <tr>
-                    <th style="padding: 12px; font-family: 'Roboto', sans-serif;">ID</th>
+                    <th style="padding: 12px; font-family: 'Roboto', sans-seri f;">ID</th>
                     <th style="padding: 12px; font-family: 'Roboto', sans-serif;">Name</th>
                     <th style="padding: 12px; font-family: 'Roboto', sans-serif;">Actions</th>
                 </tr>
