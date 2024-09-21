@@ -1,19 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<!-- Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- jQuery (Bootstrap 4 nécessite jQuery) -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
-<!-- Bootstrap JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-
 <div class="nav-left-sidebar sidebar-dark">
     <div class="menu-list">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -84,11 +75,11 @@
                                  </a>
                                     <div class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="<?= path("/operations") ?>">Operations</a>
-                                        <a class="dropdown-item" href="<?= path("/add-operation") ?>">Billet</a>
-                                        <a class="dropdown-item" href="<?= path("/add-operation") ?>">Marquage</a>
-                                        <a class="dropdown-item" href="<?= path("/add-operation") ?>">Situation</a>
-                                        <a class="dropdown-item" href="<?= path("/add-operation") ?>">Distrubution</a>
-                                        <a class="dropdown-item" href="<?= path("/add-operation") ?>">Résultat</a>
+                                        <a class="dropdown-item" href="<?= path("/tickets") ?>">Billet</a>
+                                        <a class="dropdown-item" href="<?= path("/marking") ?>">Marquage</a>
+                                        <a class="dropdown-item" href="<?= path("/situations") ?>">Situation</a>
+                                        <a class="dropdown-item" href="<?= path("/distributions") ?>">Distrubution</a>
+                                        <a class="dropdown-item" href="<?= path("/results") ?>">Résultat</a>
                                     </div>
                              </li>
                              <li class="nav-item">

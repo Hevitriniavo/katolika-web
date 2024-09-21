@@ -2,12 +2,17 @@
 
 use App\Controller\ActivityController;
 use App\Controller\CommitteeController;
+use App\Controller\DistributionController;
 use App\Controller\HolyController;
 use App\Controller\HomeController;
+use App\Controller\MarkingController;
 use App\Controller\OperationController;
 use App\Controller\RegionController;
 use App\Controller\ResponsibilityController;
+use App\Controller\ResultController;
 use App\Controller\SacramentController;
+use App\Controller\SituationController;
+use App\Controller\TicketController;
 use App\Controller\UserController;
 use App\Middleware\AuthMiddleware;
 
@@ -52,5 +57,18 @@ return [
     ['path' => "/users/delete", "method" => "POST", "controller" => [UserController::class, "delete"]],
 
     ['path' => "/operations", "method" => "GET", "controller" => [OperationController::class, "index"]],
+    ['path' => "/operations/create", "method" => "POST", "controller" => [OperationController::class, "createOperation"]],
+    ['path' => "/operations/update", "method" => "POST", "controller" => [OperationController::class, "updateOperation"]],
+    ['path' => "/operations/delete", "method" => "POST", "controller" => [OperationController::class, "deleteOperation"]],
+
+    ['path' => "/tickets", "method" => "GET", "controller" => [TicketController::class, "index"]],
+    ['path' => "/tickets/create", "method" => "POST", "controller" => [TicketController::class, "createTicket"]],
+    ['path' => "/tickets/update", "method" => "POST", "controller" => [TicketController::class, "updateTicket"]],
+    ['path' => "/tickets/delete", "method" => "POST", "controller" => [TicketController::class, "deleteTicket"]],
+
+    ['path' => "/marking", "method" => "GET", "controller" => [MarkingController::class, "index"]],
+    ['path' => "/situations", "method" => "GET", "controller" => [SituationController::class, "index"]],
+    ['path' => "/distributions", "method" => "GET", "controller" => [DistributionController::class, "index"]],
+    ['path' => "/results", "method" => "GET", "controller" => [ResultController::class, "index"]],
 
 ];
