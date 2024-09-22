@@ -30,6 +30,7 @@ class TicketController
     {
         $data = $this->validateTicketData();
 
+        dd($data);
         if ($data === null) {
             addFlashMessage('error', 'All required fields must be filled out.');
             redirect('/tickets/create');
@@ -98,7 +99,7 @@ class TicketController
         $to = $_POST['to'] ?? null;
         $operationId = $_POST['operation_id'] ?? null;
         $accountId = $_POST['account_id'] ?? null;
-        $paid = $_POST['paid'] ?? null;
+        $paid = $_POST['paid'] ?? 'no paid';
         $distribution = $_POST['distribution'] ?? null;
 
         if ($from === null || $to === null || $operationId === null || $accountId === null) {

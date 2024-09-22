@@ -93,7 +93,7 @@
                                 <!-- Password -->
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-2">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" value="<?= htmlspecialchars($user["password"] ?? '') ?>" name="password" id="password"
+                                    <input type="password" class="form-control"  name="password" id="password"
                                            placeholder="Password" <?= isset($user["id"]) ? "" : "required" ?>>
                                     <div class="invalid-feedback">Please provide a password.</div>
                                 </div>

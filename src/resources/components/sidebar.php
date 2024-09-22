@@ -89,7 +89,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/users") ?>"
+                                <a class="nav-link" style="font-family: 'Roboto', sans-serif;" href="<?= path("/calendars") ?>"
                                       data-target="#submenu-3" aria-controls="submenu-3">
                                       <i class="fas fa-calendar-alt"></i> Calendrier
                                 </a>

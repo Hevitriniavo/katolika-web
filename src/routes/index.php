@@ -1,6 +1,7 @@
 <?php
 
 use App\Controller\ActivityController;
+use App\Controller\CalendarController;
 use App\Controller\CommitteeController;
 use App\Controller\DistributionController;
 use App\Controller\HolyController;
@@ -70,5 +71,7 @@ return [
     ['path' => "/situations", "method" => "GET", "controller" => [SituationController::class, "index"]],
     ['path' => "/distributions", "method" => "GET", "controller" => [DistributionController::class, "index"]],
     ['path' => "/results", "method" => "GET", "controller" => [ResultController::class, "index"]],
+
+    ['path' => "/calendars", "method" => "GET", "controller" => [CalendarController::class, "index"]],
 
 ];
