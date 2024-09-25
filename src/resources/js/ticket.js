@@ -65,18 +65,4 @@ document.addEventListener('DOMContentLoaded', function () {
             closeModal(editModal);
         }
     });
-
-    document.querySelectorAll('.delete-ticket-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            document.getElementById('deleteTicketId').value = this.getAttribute('data-id');
-            const deleteModal = document.getElementById('deleteTicketModal');
-            deleteModal.classList.add('show');
-            deleteModal.style.display = 'block';
-            document.body.classList.add('modal-open');
-        });
-    });
-
-    document.getElementById('confirmDeleteButton').addEventListener('click', function() {
-        document.getElementById('deleteTicketForm').submit();
-    });
 });

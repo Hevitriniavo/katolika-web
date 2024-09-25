@@ -8,7 +8,7 @@
         <table class="table table-bordered" style="background-color: white; border: 1px solid #007bff; border-radius: 8px; overflow: hidden;">
             <thead style="background-color: #28a745; color: white; font-weight: 600; font-family: 'Montserrat', sans-serif;">
                 <tr>
-                    <th style="padding: 12px; font-family: 'Roboto', sans-seri f;">ID</th>
+                    <th style="padding: 12px; font-family: 'Roboto', sans-serif,serif;">ID</th>
                     <th style="padding: 12px; font-family: 'Roboto', sans-serif;">Name</th>
                     <th style="padding: 12px; font-family: 'Roboto', sans-serif;">Actions</th>
                 </tr>
@@ -23,13 +23,17 @@
                                 data-id="<?= htmlspecialchars($item['id']); ?>"
                                 data-name="<?= htmlspecialchars($item['name']); ?>"
                                 style="font-weight: 500; padding: 6px 10px;;">
-                                <i class="fas fa-edit" style="font-size: 1rem; color: green"></i>
+                            <i class="fas edit-btn  fa-edit" data-id="<?= htmlspecialchars($item['id']); ?>"
+                               data-name="<?= htmlspecialchars($item['name']); ?>"
+                               style="font-size: 1rem; color: green"></i>
                         </button>
                         <button class="delete-btn btn btn-danger"
                                 data-id="<?= htmlspecialchars($item['id']); ?>"
                                 data-name="<?= htmlspecialchars($item['name']); ?>"
                                 style="font-weight: 500; padding: 6px 10px;">
-                                <i class="fas fa-trash" style="font-size: 1rem;"></i>
+                            <i class="fas fa-trash delete-btn" style="font-size: 1rem;"
+                               data-name="<?= htmlspecialchars($item['name']); ?>"
+                               data-id="<?= htmlspecialchars($item['id']); ?>"></i>
                         </button>
                     </td>
                 </tr>

@@ -28,12 +28,16 @@
                                 data-committee-name="<?= htmlspecialchars($item['name']); ?>"
                                 data-committee-code="<?= htmlspecialchars($item['code']); ?>"
                                 style="font-weight: 500; padding: 6px 10px;">
-                                <i class="fas fa-edit" style="font-size: 1rem; color: green"></i>
+                            <i class="fas fa-edit edit-btn" data-committee-id="<?= htmlspecialchars($item['id']); ?>"
+                               data-committee-name="<?= htmlspecialchars($item['name']); ?>"
+                               data-committee-code="<?= htmlspecialchars($item['code']); ?>"
+                               style="font-size: 1rem; color: green"></i>
                         </button>
                         <button class="delete-btn btn btn-danger"
                                 data-committee-id="<?= htmlspecialchars($item['id']); ?>"
                                 style="font-weight: 500; padding: 6px 10px;">
-                                <i class="fas fa-trash" style="font-size: 1rem;"></i>
+                            <i class="fas fa-trash delete-btn "
+                               data-committee-id="<?= htmlspecialchars($item['id']); ?>" style="font-size: 1rem;"></i>
                         </button>
                     </td>
                 </tr>

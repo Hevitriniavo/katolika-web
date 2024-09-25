@@ -11,11 +11,19 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-
+.container-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(37, 47, 55, 0.44);
+    height: 100%;
+}
 .modal-content {
     background-color: #fefefe;
     border: 1px solid #888;
-    width: 30%;
+    width: 40% !important;
+    padding: 10px;
 }
 
 .modal.show {
@@ -41,6 +49,7 @@
 
 .modal-footer {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-top: 20px;
 }

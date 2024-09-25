@@ -16,8 +16,7 @@
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
-                        <th>region</th>
-                
+                        <th>Photo</th>
                         <th>Address</th>
                         <th>Birth Date</th>
                         <th>Gender</th>

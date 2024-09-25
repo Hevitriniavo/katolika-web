@@ -112,8 +112,11 @@ class UserController
             redirect('/users');
             return;
         }
-
         $data = $this->sanitizePostData();
+        if (is_null($data["password"])){
+            $user = $this->getById($userId);
+            $data["password"] = $user["password"];
+        }
         $data['photo'] = $this->handleFileUpload($data['photo'] ?? $_POST['existingPhoto'] ?? null);
         $data['id'] = $userId;
 
@@ -166,19 +169,19 @@ class UserController
     private function sanitizePostData(): array
     {
         return [
-            'first_name' => $_POST['firstName'] ?? '',
-            'last_name' => $_POST['lastName'] ?? '',
-            'code' => $_POST['code'] ?? '',
-            'qr_code' => $_POST['qrCode'] ?? '',
+            'first_name' => $_POST['firstName'] ?? null,
+            'last_name' => $_POST['lastName'] ?? null,
+            'code' => $_POST['code'] ?? null,
+            'qr_code' => $_POST['qrCode'] ?? null,
             'committee_id' => $_POST['committeeId'] ?? null,
             'holy_id' => $_POST['holyId'] ?? null,
             'responsibility_id' => $_POST['responsibilityId'] ?? null,
             'sacrament_id' => $_POST['sacramentId'] ?? null,
             'region_id' => $_POST['regionId'] ?? null,
-            'address' => $_POST['address'] ?? '',
-            'username' => $_POST['username'] ?? '',
+            'address' => $_POST['address'] ?? null,
+            'username' => $_POST['username'] ?? null,
             'birth_date' => $_POST['birthDate'] ?? null,
-            'gender' => $_POST['gender'] ?? '',
+            'gender' => $_POST['gender'] ?? null,
             'password' => !empty($_POST['password']) ? password_hash($_POST['password'], PASSWORD_DEFAULT) : null,
             'photo' => $_FILES['photo']['name'] ?? null,
         ];

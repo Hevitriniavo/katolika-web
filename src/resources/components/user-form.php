@@ -43,11 +43,15 @@
 
                             <div class="row">
                                 <!-- QR Code -->
+
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-2">
-                                    <label for="qrCode">QR Code</label>
-                                    <input type="text" class="form-control" id="qrCode" name="qrCode" value="<?= htmlspecialchars($user["qrCode"] ?? '') ?>"
-                                           placeholder="QR Code">
-                                    <div class="valid-feedback">Looks good!</div>
+                                    <label for="gender">Gender</label>
+                                    <select class="form-control" id="gender" name="gender" required>
+                                        <option value="" disabled selected>Select gender</option>
+                                        <option value="Male" <?= (isset($user["gender"]) && $user["gender"] == "Male") ? 'selected' : '' ?>>Male</option>
+                                        <option value="Female" <?= (isset($user["gender"]) && $user["gender"] == "Female") ? 'selected' : '' ?>>Female</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select gender.</div>
                                 </div>
 
                                 <!-- Photo -->
@@ -156,7 +160,6 @@
                                     <div class="invalid-feedback">Please select a responsibility.</div>
                                 </div>
 
-                                <!-- Committee -->
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-2">
                                     <label for="committeeId">Committee</label>
                                     <select class="form-control" id="committeeId" name="committeeId">
@@ -170,19 +173,13 @@
                                     <div class="invalid-feedback">Please select a committee.</div>
                                 </div>
 
-                                <!-- Gender -->
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-2">
-                                    <label for="gender">Gender</label>
-                                    <select class="form-control" id="gender" name="gender" required>
-                                        <option value="" disabled selected>Select gender</option>
-                                        <option value="Male" <?= (isset($user["gender"]) && $user["gender"] == "Male") ? 'selected' : '' ?>>Male</option>
-                                        <option value="Female" <?= (isset($user["gender"]) && $user["gender"] == "Female") ? 'selected' : '' ?>>Female</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select gender.</div>
-                                </div>
+
                             </div>
 
-                            <button class="btn btn-primary" type="submit"><?= isset($user["id"]) ? "Update User" : "Create User" ?></button>
+                           <div class="d-flex justify-content-between">
+                               <a class="btn btn-danger" href="<?= path("/users") ?>">Cancel</a>
+                               <button class="btn btn-primary" type="submit"><?= isset($user["id"]) ? "Update User" : "Create User" ?></button>
+                           </div>
                         </form>
                     </div>
                 </div>
