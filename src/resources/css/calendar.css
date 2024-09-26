@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+.notification-container {
+    margin-top: 100px;
+    background-color: #fff; /* White background for the notification box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px;
+    margin: auto; /* Centering the container */
+}
+
+.notification-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40; /* Dark color for the title */
+}
+
+.notification-message {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #495057; /* Darker gray for the message */
+}
+
+.btn-custom {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 5px; /* Rounded button */
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
