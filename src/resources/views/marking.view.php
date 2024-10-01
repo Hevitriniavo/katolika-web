@@ -100,6 +100,11 @@
                         <input type="checkbox" class="styled-checkbox">
                     </div>
                 </div>
+                <div class="pt-4">
+                    <button type="button" class="btn btn-success btn-lg">
+                        <i class="fas fa-check-circle"></i> Marqué Payé
+                    </button>
+                </div>
             </div>
         </div>
     </div>
