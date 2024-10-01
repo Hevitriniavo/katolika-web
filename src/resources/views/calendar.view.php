@@ -7,7 +7,7 @@
                     <form class="event-form">
                         <div class="form-group">
                             <label for="eventDate">Select Date:</label>
-                            <input type="text" class="form-control" id="eventDate" required>
+                            <input type="Date" class="form-control" id="eventDate" required>
                         </div>
                         <div class="form-group">
                             <label for="eventDescription">Event Description:</label>
